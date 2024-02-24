@@ -199,7 +199,7 @@ button {
     <div class="migration-column">
         <h1 class="migration-header">{migration_title}</h1>
         <p class="migration-description">{migration_description}</p>
-        <button on:click={goto("/demo")} class="button-demo-migration">Migrate now</button>
+        <button on:click={() => goto("/demo")} class="button-demo-migration">Migrate now</button>
     </div>
     <div class="migration-image-container">
         <img src="migrationGraphic.png" alt="Data sheets graphic symbolizing data migration." class="migration-image">

@@ -274,7 +274,7 @@ button {
         <div class="pricing-description-2">
             <p class="pricing-description-text">Temporary Access</p>
         </div>
-        <button on:click={goto("/trial")} class="pricing-cta">Try free</button>
+        <button on:click={() => goto("/trial")} class="pricing-cta">Try free</button>
     </div>
 
     <div class="pricing-price-column">
@@ -291,7 +291,7 @@ button {
         <div class="pricing-description-2">
             <p class="pricing-description-text">0 hours of consulting to create your customization requests</p>
         </div>
-        <button on:click={goto("/demo")} class="pricing-cta">Book Demo</button>
+        <button on:click={() => goto("/demo")} class="pricing-cta">Book Demo</button>
     </div>
 
     <div class="pricing-price-column pricing-column-alternate">
@@ -308,7 +308,7 @@ button {
         <div class="pricing-description-2">
             <p class="pricing-description-text pricing-text-alternate">60 hours of consulting to create your customization requests</p>
         </div>
-        <button on:click={goto("/demo")} class="pricing-cta-alternate">Book Demo</button>
+        <button on:click={() => goto("/demo")} class="pricing-cta-alternate">Book Demo</button>
     </div>
 
     <div class="pricing-price-column">
@@ -325,6 +325,6 @@ button {
         <div class="pricing-description-2">
             <p class="pricing-description-text">140 hours of consulting to create your customization requests</p>
         </div>
-        <button on:click={goto("/demo")} class="pricing-cta">Book Demo</button>
+        <button on:click={() => goto("/demo")} class="pricing-cta">Book Demo</button>
     </div>
 </div>

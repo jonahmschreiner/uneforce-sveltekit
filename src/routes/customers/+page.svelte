@@ -434,6 +434,8 @@ button {
 
 <script>
     import { goto } from '$app/navigation';
+
+
 </script>
 
 <title>Customer Success Stories</title>
@@ -449,7 +451,7 @@ button {
     <div class="column-customers-1-right">
         <h2 class="customers-h2">How UNEMED had a 10x Improvement With Uneforce</h2>
         <p class="customers-p">Find out how they went from Word docs and a “next-to-useless platform” to “silky smooth operations that made it easy to win"</p>
-        <button on:click={goto("/customers/unemed")} class="button-demo-unemed">The UNEMED Story</button>
+        <button on:click={() => goto("/customers/unemed")} class="button-demo-unemed">The UNEMED Story</button>
     </div>
 </div>
 
@@ -457,7 +459,7 @@ button {
     <div class="column-customers-2-left">
         <h2 class="customers-h2">How UH adapted to meet AUTM reporting changes</h2>
         <p class="customers-p-2">Find out how they made the adjustments in ten minutes using Uneforce’s customization tools</p>
-        <button on:click={goto("/customers/houston")} class="button-demo-houston">The University of Houston Storyy</button>
+        <button on:click={() => goto("/customers/houston")} class="button-demo-houston">The University of Houston Storyy</button>
     </div>
     <div class="column-customers-2-right">
         <img src="houstonCaseStudyImageCroppedToSquare.png" alt="Houston Case Study: Building on their campus." class="image-customers-after">

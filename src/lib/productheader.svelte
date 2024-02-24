@@ -130,5 +130,5 @@ button {
 <div class="product-header-text">
     <h1 class="product-header-h1">{page_title}</h1>
     <p class="product-header-p">{page_description}</p>
-    <button on:click={goto("/trial")} class="button-try">Try Uneforce free</button>
+    <button on:click={() => goto("/trial")} class="button-try">Try Uneforce free</button>
 </div>

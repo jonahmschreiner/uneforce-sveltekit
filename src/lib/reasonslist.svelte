@@ -337,7 +337,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Buy once, use forever</h3>
             <p class="comparison-reasons-p">After setup, you only need to pay for Salesforce licenses to keep using the platform (around $800 total per year for most offices).</p>
-            <button on:click={goto("/pricing")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/pricing")} class="button-learn-more">Learn more</button>
         </div>
 
         <div class="comparison-reasons-graphic-container comparison-reasons-hidden">
@@ -346,7 +346,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Customization freedom</h3>
             <p class="comparison-reasons-p">The platform enables the tracking of all office activities in one place (no matter how unique) and gives you full control over your operational efficiency through automation.</p>
-            <button on:click={goto("/product/automation")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/product/automation")} class="button-learn-more">Learn more</button>
         </div>
         <div class="comparison-reasons-graphic-container comparison-reasons-hideable">
             <img src="/reason2Graphic.png" alt="Graphic showing the platform's adaptiveness to offices' unique use cases." class="comparison-reasons-graphic-2">
@@ -359,7 +359,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Clarity for your team</h3>
             <p class="comparison-reasons-p">The most high-impact tasks are automatically placed on your team’s home dashboards with links to the materials needed to complete them.</p>
-            <button on:click={goto("/product/clarify")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/product/clarify")} class="button-learn-more">Learn more</button>
         </div>
 
         <div class="comparison-reasons-graphic-container comparison-reasons-hidden">
@@ -368,7 +368,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Transparency for management</h3>
             <p class="comparison-reasons-p">Know exactly how both your office and individuals are performing as well as the impact of monetization efforts so you can quickly make decisions to optimize operations.</p>
-            <button on:click={goto("/product/insights")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/product/insights")} class="button-learn-more">Learn more</button>
         </div>
         <div class="comparison-reasons-graphic-container comparison-reasons-hideable">
             <img src="/MetricsDashboardScreenshot.png" alt="Screenshot showing a dashboard for managers." class="comparison-reasons-graphic-screenshot">
@@ -382,7 +382,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Modern interface</h3>
             <p class="comparison-reasons-p">Having all the information your team needs, right where they need it means more time monetizing and less time doing admin work.</p>
-            <button on:click={goto("/product/clarify")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/product/clarify")} class="button-learn-more">Learn more</button>
         </div>
 
         <div class="comparison-reasons-graphic-container comparison-reasons-hidden">
@@ -391,7 +391,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Cloud-based</h3>
             <p class="comparison-reasons-p">Being able to monetize and update your team from anywhere makes the world your office.</p>
-            <button on:click={goto("/product/cloud")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/product/cloud")} class="button-learn-more">Learn more</button>
         </div>
         <div class="comparison-reasons-graphic-container comparison-reasons-hideable">
             <img src="/reason6Graphic.png" alt="Cloud representing that Uneforce is cloud based." class="comparison-reasons-graphic-6">
@@ -405,7 +405,7 @@ button {
         <div class="comparison-reasons-text">
             <h3 class="comparison-reasons-h3">Enterprise-grade security</h3>
             <p class="comparison-reasons-p">Using the same platform as Fortune 100 companies means that security is held to the highest standard and constantly updated to keep your organization safe.</p>
-            <button on:click={goto("/product/secure")} class="button-learn-more">Learn more</button>
+            <button on:click={() => goto("/product/secure")} class="button-learn-more">Learn more</button>
         </div>
     </div>
 </div>

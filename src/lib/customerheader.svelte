@@ -267,7 +267,7 @@
 </script>
 
 <div class="customer-header-container">
-    <img src={customer_logo} alt="{customer_logo_description}", class="customer-logo">
+    <img src={customer_logo} alt="{customer_logo_description}" class="customer-logo">
     <div class="customer-header-subcontainer">
         <div class="customer-header-column-left">
             <div class="customer-header-column-left-subcolumn">

@@ -357,15 +357,15 @@ button {
 <nav class="navbar">
   <div class="navbar-container">
     <div class="navbar-column-left">
-      <button on:click={goto("/")} class="logo">UNEFORCE</button>
+      <button on:click={() => goto("/")} class="logo">UNEFORCE</button>
       <h4 class="link-product">Product</h4>
-      <button on:click={goto("/pricing")} class="link">Pricing</button>
-      <button on:click={goto("/comparisons")} class="link">Comparisons</button>
-      <button on:click={goto("/customers")} class="link">Customers</button>
-      <button on:click={goto("/")} class="link hidden">Learn</button>
+      <button on:click={() => goto("/pricing")} class="link">Pricing</button>
+      <button on:click={() => goto("/comparisons")} class="link">Comparisons</button>
+      <button on:click={() => goto("/customers")} class="link">Customers</button>
+      <button on:click={() => goto("/")} class="link hidden">Learn</button>
     </div>
     <div class="navbar-column-right">
-        <button on:click={goto("/trial")} class="navbar-cta">Try free</button>
+        <button on:click={() => goto("/trial")} class="navbar-cta">Try free</button>
         <img src='{baseURL}menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
     </div>
   </div>
@@ -387,7 +387,7 @@ button {
     </div>
     <div class="dropdown-product">
   
-      <button on:click={goto("/product/clarify")} class="dropdown-product-links-container-know">
+      <button on:click={() => goto("/product/clarify")} class="dropdown-product-links-container-know">
           <div class="dropdown-product-link">
             <div class="dropdown-product-link-text">
               <h3 class="dropdown-product-link-header">Clarify</h3>
@@ -396,7 +396,7 @@ button {
           </div>
       </button>
 
-      <button on:click={goto("/product/automation")} class="dropdown-product-links-container-know">
+      <button on:click={() => goto("/product/automation")} class="dropdown-product-links-container-know">
           <div class="dropdown-product-link">
             <div class="dropdown-product-link-text">
               <h3 class="dropdown-product-link-header">Automation</h3>
@@ -405,7 +405,7 @@ button {
           </div>
       </button>
 
-      <button on:click={goto("/product/insights")} class="dropdown-product-links-container-know">
+      <button on:click={() => goto("/product/insights")} class="dropdown-product-links-container-know">
           <div class="dropdown-product-link">
             <div class="dropdown-product-link-text">
               <h3 class="dropdown-product-link-header">Insights</h3>
@@ -414,7 +414,7 @@ button {
           </div>
       </button>
 
-      <button on:click={goto("/product/secure")} class="dropdown-product-links-container-know">
+      <button on:click={() => goto("/product/secure")} class="dropdown-product-links-container-know">
           <div class="dropdown-product-link">
             <div class="dropdown-product-link-text">
               <h3 class="dropdown-product-link-header">Secure</h3>
@@ -423,7 +423,7 @@ button {
           </div>
       </button>
 
-      <button on:click={goto("/product/cloud")} class="dropdown-product-links-container-know">
+      <button on:click={() => goto("/product/cloud")} class="dropdown-product-links-container-know">
           <div class="dropdown-product-link">
             <div class="dropdown-product-link-text">
               <h3 class="dropdown-product-link-header">Cloud</h3>

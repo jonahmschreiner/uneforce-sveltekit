@@ -230,15 +230,15 @@ button {
             <p class="cta-p">Fully customizable (easily build whole workflows instead of just custom fields)</p>
         </div>
         <div class="cta-checkbox-row">
-            <img src="checkboxGraphic.png" alt="Checkbox" class="cta-checkbox">
+            <img src="/checkboxGraphic.png" alt="Checkbox" class="cta-checkbox">
             <p class="cta-p">Enterprise-grade security (used by Fortune 100 companies)</p>
         </div>
         <div class="cta-checkbox-row">
-            <img src="checkboxGraphic.png" alt="Checkbox" class="cta-checkbox">
+            <img src="/checkboxGraphic.png" alt="Checkbox" class="cta-checkbox">
             <p class="cta-p">Pre-built automation (simplify workflow from the start)</p>
         </div>
     </div>
     <div class="cta-header-container">
-        <button class="button-try" on:click={goToTrial}>Try Uneforce free</button>
+        <button class="button-try" on:click={() => gotoTrial}>Try Uneforce free</button>
     </div>
 </div>

@@ -245,5 +245,5 @@ button {
         </div>
     </div>
 
-    <button on:click={goto("/trial")} class="button-try">Try Uneforce free</button>
+    <button on:click={() => goto("/trial")} class="button-try">Try Uneforce free</button>
 </div>

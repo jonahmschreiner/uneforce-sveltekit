@@ -89,5 +89,5 @@ button {
 
 <div class="product-cta-without-header-container">
     <p class="product-cta-description">{cta_description_2}</p>
-     <button on:click={goto("/demo")} class="product-cta-button">Clarify with Uneforce</button>
+     <button on:click={() => goto("/demo")} class="product-cta-button">Clarify with Uneforce</button>
 </div>

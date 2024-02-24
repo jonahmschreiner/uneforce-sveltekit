@@ -201,12 +201,12 @@ button {
 <p class="comparisons-p">It’s hard to find a TTO management platform comparison guide that’s actually useful, so we made our own. Click each comparison for an in-depth analysis.</p>
 <h2 class="comparisons-h2">Have a solution in mind?</h2>
 <div class="competitor-links-container">
-    <button on:click={goto("/comparisons/inteum")} class="competitor-button">
+    <button on:click={() => goto("/comparisons/inteum")} class="competitor-button">
         <img src="/inteumLogo.png" alt="Inteum Logo" class="competitor-logo">
         <p class="comparisons-competitor-name">Inteum</p>
     </button>
 
-    <button on:click={goto("/comparisons/wellspring")} class="competitor-button">
+    <button on:click={() => goto("/comparisons/wellspring")} class="competitor-button">
         <img src="/WellspringLogoTransparent.png" alt="Wellspring Logo" class="competitor-logo">
         <p class="comparisons-competitor-name">Wellspring</p>
     </button>

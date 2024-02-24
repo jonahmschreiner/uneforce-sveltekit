@@ -14,6 +14,7 @@
     color: #555555;
     margin-top: 0px;
     margin-bottom: 50px;
+    white-space: pre-line;
 }
 
 .customer-story-container {
@@ -136,25 +137,25 @@
 
 <div class="customer-story-container">
     <div class="customer-story-text-container">
-    <p class="customer-story-p">{story_introduction}</p>
+    <p class="customer-story-p">{@html story_introduction}</p>
     <h2 class="customer-story-h2">Why Uneforce?</h2>
-    <p class="customer-story-p">{why_uneforce}</p>
+    <p class="customer-story-p">{@html why_uneforce}</p>
     </div>
     <div class="customer-story-container-quote">
-        <p class="customer-story-container-quote-text">{quote_1}</p>
+        <p class="customer-story-container-quote-text">{@html quote_1}</p>
     </div>
     <div class="customer-story-text-container">
-    <h2 class="customer-story-h2">{reason_1}</h2>
-    <p class="customer-story-p">{reason_1_story}</p>
+    <h2 class="customer-story-h2">{@html reason_1}</h2>
+    <p class="customer-story-p">{@html reason_1_story}</p>
     </div>
     <div class="customer-story-container-quote">
-        <p class="customer-story-container-quote-text">{quote_2}</p>
+        <p class="customer-story-container-quote-text">{@html quote_2}</p>
     </div>
     <div class="customer-story-text-container">
     <h2 class="customer-story-h2">Advice to other tech transfer offices?</h2>
-    <p class="customer-story-p">{advice}</p>
+    <p class="customer-story-p">{@html advice}</p>
     </div>
     <div class="customer-story-container-quote">
-        <p class="customer-story-container-quote-text">{advice_quote}</p>
+        <p class="customer-story-container-quote-text">{@html advice_quote}</p>
     </div>
 </div>

@@ -138,7 +138,7 @@
                             <h4 class="dropdown-product-category">Know</h4>
                         </div>
                         <div class="column-dropdown-product">
-                            <button on:click={goto("/product/clarify")} class="column-dropdown-product-links-container-know">
+                            <button on:click={() => goto("/product/clarify")} class="column-dropdown-product-links-container-know">
                                 <div class="dropdown-product-link">
                                     <div class="dropdown-product-link-text">
                                         <h3 class="dropdown-product-link-header">Clarify</h3>
@@ -147,7 +147,7 @@
                                 </div>
                             </button>
 
-                            <button on:click={goto("/product/secure")} class="column-dropdown-product-links-container-know">
+                            <button on:click={() => goto("/product/secure")} class="column-dropdown-product-links-container-know">
                                 <div class="dropdown-product-link">
                                     <div class="dropdown-product-link-text">
                                         <h3 class="dropdown-product-link-header">Secure</h3>
@@ -162,7 +162,7 @@
                     </div>
 
                     <div class="column-dropdown-product">
-                        <button on:click={goto("/product/automation")} class="column-dropdown-product-links-container-do">
+                        <button on:click={() => goto("/product/automation")} class="column-dropdown-product-links-container-do">
                             <div class="dropdown-product-link">
                                 <div class="dropdown-product-link-text">
                                     <h3 class="dropdown-product-link-header">Automation</h3>
@@ -171,7 +171,7 @@
                             </div>
                         </button>
 
-                        <button on:click={goto("/product/cloud")} class="column-dropdown-product-links-container-do">
+                        <button on:click={() => goto("/product/cloud")} class="column-dropdown-product-links-container-do">
                             <div class="dropdown-product-link">
                                 <div class="dropdown-product-link-text">
                                     <h3 class="dropdown-product-link-header">Cloud</h3>
@@ -185,7 +185,7 @@
                         <h4 class="dropdown-product-category">Learn</h4>
                     </div>
                     <div class="column-dropdown-product">
-                        <button on:click={goto("/product/insights")} class="column-dropdown-product-links-container-learn">
+                        <button on:click={() => goto("/product/insights")} class="column-dropdown-product-links-container-learn">
                             <div class="dropdown-product-link">
                                 <div class="dropdown-product-link-text">
                                     <h3 class="dropdown-product-link-header">Insights</h3>
@@ -200,19 +200,19 @@
         </div>
 
         <div class="navbar-column-link-container">
-            <button on:click={goto("/pricing")} class= "link-column">Pricing</button> 
+            <button on:click={() => goto("/pricing")} class= "link-column">Pricing</button> 
         </div>
 
         <div class="navbar-column-link-container">
-            <button on:click={goto("/comparisons")} class= "link-column">Comparisons</button> 
+            <button on:click={() => goto("/comparisons")} class= "link-column">Comparisons</button> 
         </div>
 
         <div class="navbar-column-link-container">
-            <button on:click={goto("/customers")} class= "link-column">Customers</button> 
+            <button on:click={() => goto("/customers")} class= "link-column">Customers</button> 
         </div>
 
         <div class="navbar-column-link-container">
-            <button on:click={goto("/learn")} class= "link-column">Learn</button> 
+            <button on:click={() => goto("/learn")} class= "link-column">Learn</button> 
         </div> 
     </div>
 </div>
