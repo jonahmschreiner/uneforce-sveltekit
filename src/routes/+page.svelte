@@ -14,8 +14,8 @@
 
 <title>Enterprise-Grade Tech Transfer Management for Universities</title>
 <meta name="description" content="Uneforce brings enterprise efficiency to tech transfer offices by customizing the top CRM platforms for TTO use cases.">
-<!-- <Navbar />
-<Navbarcolumn /> -->
+<Navbar />
+<!-- <Navbarcolumn /> -->
 <Hero />
 <Mission />
 <Quote />

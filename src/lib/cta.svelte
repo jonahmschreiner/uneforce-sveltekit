@@ -1,5 +1,4 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .cta-horizontal-bar {
     height: 6px;
@@ -206,6 +205,13 @@
         width: 220px;
         margin-right: 0px;
     }
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
 }
 </style>
 

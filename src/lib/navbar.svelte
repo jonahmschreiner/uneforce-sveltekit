@@ -341,10 +341,17 @@ margin-bottom: 20px;
   }
 }
 
+button {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+}
 </style>
 
 <script>
     import { goto } from '$app/navigation';
+    const baseURL = import.meta.env.VITE_APP_BASE_URL;
 </script>
 
 <nav class="navbar">
@@ -359,22 +366,22 @@ margin-bottom: 20px;
     </div>
     <div class="navbar-column-right">
         <button on:click={goto("/trial")} class="navbar-cta">Try free</button>
-        <img src='menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
+        <img src='{baseURL}menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
     </div>
   </div>
 
   <div class="dropdown-product-container-parent hidden">
     <div class="dropdown-product-categories">
           <div class="dropdown-product-category-container">
-            <img src="lightbulbGraphic.png" alt="Lightbulb icon that symbolizes Know" class="dropdown-product-category-image">
+            <img src="{baseURL}lightbulbGraphic.png" alt="Lightbulb icon that symbolizes Know" class="dropdown-product-category-image">
             <h4 class="dropdown-product-category">Know</h4>
           </div>
           <div class="dropdown-product-category-container">
-            <img src="checkmarkGraphic.png" alt="Checkmark icon that symbolizes Do" class="dropdown-product-category-image">
+            <img src="{baseURL}checkmarkGraphic.png" alt="Checkmark icon that symbolizes Do" class="dropdown-product-category-image">
             <h4 class="dropdown-product-category">Do</h4>
           </div>
           <div class="dropdown-product-category-container">
-            <img src="learnGraphic.png" alt="Line-graph-going-up icon that symbolizes Learn" class="dropdown-product-category-image">
+            <img src="{baseURL}learnGraphic.png" alt="Line-graph-going-up icon that symbolizes Learn" class="dropdown-product-category-image">
             <h4 class="dropdown-product-category">Learn</h4>
           </div>
     </div>

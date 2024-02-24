@@ -1,4 +1,11 @@
 <style>
+button {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
 .book-demo-container {
     display: flex;
     justify-content: center;
@@ -266,6 +273,7 @@
 
 <script>
     import { goto } from '$app/navigation';
+    const baseURL = import.meta.env.VITE_APP_BASE_URL;
     let firstname;
     let lastname;
     let title;
@@ -291,15 +299,15 @@
         <p class="book-demo-description">Book a 30-minute call and get a one-on-one walkthrough to determine how Uneforce can help your office. Here's what to expect:</p>
         <div class="book-demo-left-subcolumn">
             <div class="book-demo-checkbox-line">
-                <img src="checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
+                <img src="{baseURL}checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
                 <p class="book-demo-p">A brief discussion of your office’s goals and pain points</p>
             </div>
             <div class="book-demo-checkbox-line">
-                <img src="checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
+                <img src="{baseURL}checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
                 <p class="book-demo-p">A live demonstration of the platform and its main features</p>
             </div>
             <div class="book-demo-checkbox-line">
-                <img src="checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
+                <img src="{baseURL}checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
                 <p class="book-demo-p">All your questions answered to ensure you have the info you need (no commitment whatsoever)</p>
             </div>
         </div>

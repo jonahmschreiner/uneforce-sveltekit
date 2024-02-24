@@ -38,5 +38,5 @@
 </script>
 
 <div class="product-screenshot-container">
-    <img src={screenshot}, alt="Screenshot of product feature." class="product-screenshot">
+    <img src={screenshot} alt="Screenshot of product feature." class="product-screenshot">
 </div>

@@ -210,40 +210,40 @@
     <h2 class="pricing-faq-header">Frequently Asked Questions</h2>
     <div class="pricing-faq-question-container">
         <div class="pricing-faq-question-column">
-                <p class="pricing-faq-question-text", id="q1">What is Uneforce?</p>
+                <p class="pricing-faq-question-text" id="q1">What is Uneforce?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q1">
-                <p class="pricing-faq-question-answer-text hidden", id="a1">UNeForce is an application installed into an active Salesforce organization that provides Technology Transfer Offices with customized functionality.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a1">UNeForce is an application installed into an active Salesforce organization that provides Technology Transfer Offices with customized functionality.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A1">
-                <p class="pricing-faq-question-text", id="q2">What is Salesforce?</p>
+                <p class="pricing-faq-question-text" id="q2">What is Salesforce?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q2">
-                <p class="pricing-faq-question-answer-text hidden", id="a2">Salesforce CRM is an international customer relations management platform that provides leading edge management for sales and marketing efforts.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a2">Salesforce CRM is an international customer relations management platform that provides leading edge management for sales and marketing efforts.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A2">
-                <p class="pricing-faq-question-text", id="q3">How do I access Uneforce?</p>
+                <p class="pricing-faq-question-text" id="q3">How do I access Uneforce?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q3">
-                <p class="pricing-faq-question-answer-text hidden", id="a3">By logging into your Salesforce organization wherever internet service is available.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a3">By logging into your Salesforce organization wherever internet service is available.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A3">
-                <p class="pricing-faq-question-text", id="q4">How do I get our old data into Uneforce?</p>
+                <p class="pricing-faq-question-text" id="q4">How do I get our old data into Uneforce?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q4">
-                <p class="pricing-faq-question-answer-text hidden", id="a4">You or your IT department can use a number of recommended tools to perform the migration, or we can for you through a separate consulting agreement.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a4">You or your IT department can use a number of recommended tools to perform the migration, or we can for you through a separate consulting agreement.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A4">
         </div>
 
         <div class="pricing-faq-question-column">
-                <p class="pricing-faq-question-text", id="q5">How is Uneforce installed?</p>
+                <p class="pricing-faq-question-text" id="q5">How is Uneforce installed?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q5">
-                <p class="pricing-faq-question-answer-text hidden", id="a5">After providing us access to your Salesforce organization, the application is installed remotely over the internet. There is no software to install.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a5">After providing us access to your Salesforce organization, the application is installed remotely over the internet. There is no software to install.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A5">
-                <p class="pricing-faq-question-text", id="q6">How can I customize Uneforce?</p>
+                <p class="pricing-faq-question-text" id="q6">How can I customize Uneforce?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q6">
-                <p class="pricing-faq-question-answer-text hidden", id="a6">See the learn tab for details.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a6">See the learn tab for details.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A6">
-                <p class="pricing-faq-question-text", id="q7">Does our Uneforce license expire?</p>
+                <p class="pricing-faq-question-text" id="q7">Does our Uneforce license expire?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q7">
-                <p class="pricing-faq-question-answer-text hidden", id="a7">No. The license for the UNeForce application is in force once the entire licensing fee has been paid.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a7">No. The license for the UNeForce application is in force once the entire licensing fee has been paid.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A7">
-                <p class="pricing-faq-question-text", id="q8">Are incubators supported?</p>
+                <p class="pricing-faq-question-text" id="q8">Are incubators supported?</p>
                 <img src="faqDropdownIcon.png" alt="Dropdown icon for a faq question." class="pricing-faq-question-icon" id="Q8">
-                <p class="pricing-faq-question-answer-text hidden", id="a8">UNeForce will support any program required by the TTO, but it might take a little customization for your particular program.</p>
+                <p class="pricing-faq-question-answer-text hidden" id="a8">UNeForce will support any program required by the TTO, but it might take a little customization for your particular program.</p>
                 <img src="blank.png" alt="test" class="pricing-faq-question-icon hidden" id="A8">
         </div>
     </div>

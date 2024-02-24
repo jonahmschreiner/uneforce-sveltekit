@@ -223,6 +223,13 @@
         font-size: 14px;
     }
 }
+
+button {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+}
 </style>
 
 <script>

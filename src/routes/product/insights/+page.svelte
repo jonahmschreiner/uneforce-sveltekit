@@ -9,16 +9,17 @@
     import Productanimationshowcaseblue1 from "../../../lib/productanimationshowcaseblue1.svelte";
     import Productanimationshowcasewhite2 from "../../../lib/productanimationshowcasewhite2.svelte";
     import Productctawithheader2 from "../../../lib/productctawithheader2.svelte";
-    let screenshot = "/MetricsDashboardScreenshot.png"
+    const baseURL = import.meta.env.VITE_APP_BASE_URL;
+    let screenshot = `${baseURL}MetricsDashboardScreenshot.png`;
     let page_title = "Receive a clear view of your portfolio"
     let page_description = "Automatic reporting compiles your data into comprehensive dashboards and shareable documents."
     let cta_description = "Deeply understand your portfolio. Effortlessly communicate results and next steps."
     let animation_heading_1 = "Help your people know exactly what to prioritize"
     let animation_description_1 = "Office actions can be quickly created and users can easily view and complete those with upcoming deadlines through personalized dashboards on their home screen."
-    let animation_video_1 = "/OfficeActionCreationVideo.mp4"
+    let animation_video_1 = `${baseURL}OfficeActionCreationVideo.mp4`
     let animation_heading_2 = "Get a bird’s eye view into your office and portfolio"
     let animation_description_2 = "KPIs and warnings are generated and then compiled into comprehensive, customizable dashboards for managers."
-    let animation_video_2 = "/DashboardVideo.mp4"
+    let animation_video_2 = `${baseURL}DashboardVideo.mp4`
     let cta_title_2 = "Migration on your mind?"
     let cta_description_2 = "Switching platforms is time consuming. We help by providing data mapping and migration guides that simplify the process or can do it for you."
 </script>

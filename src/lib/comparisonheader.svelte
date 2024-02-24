@@ -1,5 +1,4 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .comparison-header-h1 {
     font-family: 'Lato', sans-serif;
@@ -209,6 +208,13 @@
     .comparison-header-checklist-container {
         margin-bottom: 50px;
     }
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
 }
 </style>
 
