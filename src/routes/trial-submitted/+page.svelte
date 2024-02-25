@@ -66,8 +66,8 @@
 </style>
 
 <script>
-    import Navbar from "../lib/navbar.svelte";
-    import Navbarcolumn from "../lib/navbarcolumn.svelte";
+    import Navbar from "../../lib/navbar.svelte";
+    import Navbarcolumn from "../../lib/navbarcolumn.svelte";
     import { navbarColumnVisible } from '$lib/stores/mainstores';
 </script>
 
