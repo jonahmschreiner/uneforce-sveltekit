@@ -9,6 +9,9 @@
     import Productanimationshowcaseblue1 from "../../../lib/productanimationshowcaseblue1.svelte";
     import Productanimationshowcasewhite2 from "../../../lib/productanimationshowcasewhite2.svelte";
     import Productctawithheader2 from "../../../lib/productctawithheader2.svelte";
+    import Navbar from "../../../lib/navbar.svelte";
+    import Navbarcolumn from "../../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
     const baseURL = import.meta.env.VITE_APP_BASE_URL;
     let screenshot = `${baseURL}MetricsDashboardScreenshot.png`;
     let page_title = "Receive a clear view of your portfolio"
@@ -26,7 +29,10 @@
 
 <title>Insights</title>
 <meta name="description" content="Easily know and communicate TTO activity and performance.">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <Productheader {page_title} {page_description}/>
 <Productscreenshot {screenshot}/>
 <Productctawithoutheader {cta_description}/>

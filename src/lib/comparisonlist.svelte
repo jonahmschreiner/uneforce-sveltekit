@@ -235,7 +235,7 @@
     <h2 class="comparison-list-heading">Which platform is right for you?</h2>
     <div class="comparison-list-table-container">
         <div class="comparison-list-column">
-            <img src="smileyFace.png" alt="Smiley face" class="comparison-list-emotion-graphic">
+            <img src="/smileyFace.png" alt="Smiley face" class="comparison-list-emotion-graphic">
             <h3 class="comparison-list-column-heading">Uneforce is for you if:</h3>
             <div class="comparison-list-column-list">
                 <p class="comparison-list-row-number">1</p>
@@ -256,7 +256,7 @@
         </div>
 
         <div class="comparison-list-column">
-            <img src="frownyFace.png" alt="Frowney face" class="comparison-list-emotion-graphic">
+            <img src="/frownyFace.png" alt="Frowney face" class="comparison-list-emotion-graphic">
             <h3 class="comparison-list-column-heading">{comparisonname} is for you if:</h3>
             <div class="comparison-list-column-list">
                 <p class="comparison-list-row-number">1</p>

@@ -234,6 +234,9 @@ button {
 
 <script>
     import { goto } from '$app/navigation';
+    import Navbar from "../lib/navbar.svelte";
+    import Navbarcolumn from "../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
     let firstname;
     let lastname;
     let title;
@@ -257,7 +260,10 @@ button {
 
 <title>Free Trial</title>
 <meta name="description" content="Try free for 72 hours.">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <div class="book-demo-container">
     <div class="book-demo-left-column">
         <h1 class="trial-h1">Try Uneforce for free</h1>

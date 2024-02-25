@@ -6,6 +6,9 @@
     import Productheader from "../../../lib/productheader.svelte";
     import Productscreenshot from "../../../lib/productscreenshot.svelte";
     import Productctawithheader from "../../../lib/productctawithheader.svelte";
+    import Navbar from "../../../lib/navbar.svelte";
+    import Navbarcolumn from "../../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
     const baseURL = import.meta.env.VITE_APP_BASE_URL;
     let screenshot = `${baseURL}cloudLoginScreenshot.png`;
     let page_title = "Work securely from anywhere";
@@ -16,7 +19,10 @@
 
 <title>Operate TTO from anywhere</title>
 <meta name="description" content="How Uneforce enables you to have access from anywhere.">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <Productheader {page_title} {page_description}/>
 <Productscreenshot {screenshot}/>
 <Productctawithheader {cta_title} {cta_description}/>

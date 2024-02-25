@@ -434,13 +434,18 @@ button {
 
 <script>
     import { goto } from '$app/navigation';
-
+    import Navbar from "../../lib/navbar.svelte";
+    import Navbarcolumn from "../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
 
 </script>
 
 <title>Customer Success Stories</title>
 <meta name="description" content="Some of our customers\' experiences with Uneforce.">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <div class="customers-container-heading">
     <h1 class="customers-h1">Uneforce drives growth for offices like yours</h1>
 </div>

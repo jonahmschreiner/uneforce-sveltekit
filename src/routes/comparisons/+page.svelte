@@ -191,11 +191,17 @@ button {
 
 <script>
     import { goto } from '$app/navigation';
+    import Navbar from "../../lib/navbar.svelte";
+    import Navbarcolumn from "../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
 </script>
 
 <title>Comparisons</title>
 <meta name="description" content="How Uneforce compares to other management software in the industry.">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <div class="comparisons-container">
 <h1 class="comparisons-h1">How Does Uneforce Compare To The Competition?</h1>
 <p class="comparisons-p">It’s hard to find a TTO management platform comparison guide that’s actually useful, so we made our own. Click each comparison for an in-depth analysis.</p>

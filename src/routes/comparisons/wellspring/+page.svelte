@@ -7,6 +7,9 @@
     import Comparisonheader from "../../../lib/comparisonheader.svelte";
     import Comparisonlist from "../../../lib/comparisonlist.svelte";
     import Reasonslist from "../../../lib/reasonslist.svelte";
+    import Navbar from "../../../lib/navbar.svelte";
+    import Navbarcolumn from "../../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
     let comparisonvstext = "Uneforce vs. Wellspring";
     let comparisontitle = "How is Uneforce better than Wellspring?";
     let comparisonname = "Wellspring";
@@ -21,6 +24,11 @@
 
 <title>Compared to Wellspring</title>
 <meta name="description" content="How Uneforce compares to Wellspring.">
+
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <Comparisonheader {comparisonvstext} {comparisontitle}/>
 <Comparisonlist {comparisonname} {comparisonreason1} {comparisonreason2} {comparisonreason3} {comparisonreason4} {comparisonreason5} {comparisonreason6} {comparisonreason7}/>
 <Reasonslist />

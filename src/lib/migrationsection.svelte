@@ -202,6 +202,6 @@ button {
         <button on:click={() => goto("/demo")} class="button-demo-migration">Migrate now</button>
     </div>
     <div class="migration-image-container">
-        <img src="migrationGraphic.png" alt="Data sheets graphic symbolizing data migration." class="migration-image">
+        <img src="/migrationGraphic.png" alt="Data sheets graphic symbolizing data migration." class="migration-image">
     </div>
 </div>

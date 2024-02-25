@@ -64,10 +64,19 @@
         }
     }
     </style>
+
+    <script>
+            import Navbar from "../../lib/navbar.svelte";
+    import Navbarcolumn from "../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
+    </script>
     
     <title>Demo Request Submitted</title>
     <meta name="description" content="Demo request sent, we\'ll reach out shortly.">
-    
+    <Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
     <div class="demo-submitted-container">
         <h1 class="demo-submitted-h1">Demo Request Submitted</h1>
         <p class="demo-submitted-p">Keep an eye on your inbox, we'll reach out shortly</p>

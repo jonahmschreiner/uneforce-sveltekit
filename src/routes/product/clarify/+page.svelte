@@ -8,6 +8,9 @@
     import Productctawithoutheader from "../../../lib/productctawithoutheader.svelte";
     import Productanimationshowcaseblue1 from "../../../lib/productanimationshowcaseblue1.svelte";
     import Migrationsection from "../../../lib/migrationsection.svelte";
+    import Navbar from "../../../lib/navbar.svelte";
+    import Navbarcolumn from "../../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
     const baseURL = import.meta.env.VITE_APP_BASE_URL;
     let screenshot = `${baseURL}interfaceScreenshot.png`;
     let page_title = "Ensure the data you need is at your fingertips";
@@ -22,7 +25,10 @@
 
 <title>Clarify</title>
 <meta name="description" content="How Uneforce makes your team\'s jobs easier">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <Productheader {page_title} {page_description}/>
 <Productscreenshot {screenshot}/>
 <Productctawithoutheader {cta_description}/>

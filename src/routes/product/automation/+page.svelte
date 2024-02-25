@@ -9,6 +9,9 @@
     import Productanimationshowcaseblue1 from "../../../lib/productanimationshowcaseblue1.svelte";
     import Productanimationshowcasewhite2 from "../../../lib/productanimationshowcasewhite2.svelte";
     import Migrationsection from "../../../lib/migrationsection.svelte";
+    import Navbar from "../../../lib/navbar.svelte";
+    import Navbarcolumn from "../../../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
     const baseURL = import.meta.env.VITE_APP_BASE_URL;
     let screenshot = `${baseURL}automationScreenshot.png`;
     let page_title = "Tremendously increase throughput using fully-customizable automation"
@@ -29,7 +32,10 @@
 
 <title>Unlimited Automation for TTOs</title>
 <meta name="description" content="How Uneforce enables you to automate any office activity.">
-
+<Navbar />
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <Productheader {page_title} {page_description}/>
 <Productscreenshot {screenshot}/>
 <Productctawithoutheader {cta_description}/>

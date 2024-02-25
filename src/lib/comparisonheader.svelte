@@ -85,6 +85,22 @@
     padding-right: 8px;
 }
 
+.button-try {
+    background-color: #0077B5;
+    color: #FFFFFF;
+    border: none;
+    width: 360px;
+    height: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button-try:hover {
+    background-color: #005685;
+}
+
 @media (max-width: 1640px) {
     .comparison-header-checklist-container {
         width: 100%;
@@ -134,6 +150,10 @@
     .comparison-header-vs-text {
         font-size: 20px;
     }
+
+    .button-try {
+        width: 320px;
+    }
 }
 
 @media (max-width: 1215px) {
@@ -163,6 +183,10 @@
 
     .comparison-header-checkbox {
         width: 25px;
+    }
+
+    .button-try {
+        width: 260px;
     }
 }
 
@@ -210,6 +234,13 @@
     }
 }
 
+@media (max-width: 330px) {
+    .button-try {
+        width: 220px;
+        margin-right: 0px;
+    }
+}
+
 button {
     cursor: pointer;
     padding: 0;
@@ -230,17 +261,17 @@ button {
     <p class="comparison-header-subheading">It’s a valid question. And one we can’t answer without bias. So, rather than comparing features side-by-side, we’ll share who Uneforce is for—and not for—and the 7 reasons people switch to Uneforce.</p>
     <div class="comparison-header-checklist-container">
         <div class="comparison-header-checklist-column">
-            <img src="checkboxGraphic.png" alt="Checkbox" class="comparison-header-checkbox">
+            <img src="/checkboxGraphic.png" alt="Checkbox" class="comparison-header-checkbox">
             <p class="comparison-header-checkbox-description">Fully customizable<br>(whole workflows in addition to fields)</p>
         </div>
 
         <div class="comparison-header-checklist-column">
-            <img src="checkboxGraphic.png" alt="Checkbox" class="comparison-header-checkbox">
+            <img src="/checkboxGraphic.png" alt="Checkbox" class="comparison-header-checkbox">
             <p class="comparison-header-checkbox-description">Enterprise-grade security<br>(used by Fortune 100 companies)</p>
         </div>
 
         <div class="comparison-header-checklist-rightmost-column">
-            <img src="checkboxGraphic.png" alt="Checkbox" class="comparison-header-checkbox">
+            <img src="/checkboxGraphic.png" alt="Checkbox" class="comparison-header-checkbox">
             <p class="comparison-header-checkbox-description">Pre-built automation<br>(simplify workflow from the start)</p>
         </div>
     </div>
