@@ -110,6 +110,23 @@
     line-height: 150%;
 }
 
+.trial-h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 55px;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.trial-description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    max-width: 650px;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+
 @media (max-width: 1665px) {
     .book-demo-container {
         margin-left: 100px;
@@ -149,6 +166,15 @@
 }
 
 @media (max-width: 1215px) {
+    .trial-h1 {
+        text-align: center;
+    }
+
+    .trial-description {
+        text-align: center;
+        max-width: 550px;
+    }
+
     .book-demo-container {
         flex-direction: column;
     }
@@ -194,6 +220,11 @@
 }
 
 @media (max-width: 770px) {
+
+    .trial-h1 {
+        font-size: 45px;
+    }
+
     .book-demo-h2 {
         font-size: 30px;
     }
@@ -208,6 +239,14 @@
 }
 
 @media (max-width: 520px) {
+    .trial-h1 {
+        font-size: 35px;
+    }
+
+    .trial-description {
+        font-size: 18px;
+    }
+
     .book-demo-container {
         margin-left: 30px;
         margin-right: 30px;
@@ -234,8 +273,8 @@ button {
 
 <script>
     import { goto } from '$app/navigation';
-    import Navbar from "../lib/navbar.svelte";
-    import Navbarcolumn from "../lib/navbarcolumn.svelte";
+    import Navbar from "../../lib/navbar.svelte";
+    import Navbarcolumn from "../../lib/navbarcolumn.svelte";
     import { navbarColumnVisible } from '$lib/stores/mainstores';
     let firstname;
     let lastname;

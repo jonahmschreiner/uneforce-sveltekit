@@ -335,8 +335,8 @@ button {
         <h1 class="hero-h1">Enterprise-grade tech transfer management for universities</h1>
         <p class="hero-p">Have all of your data in one place and platform costs reduced by 90%.</p>
         <div class="button-row-container">
-            <button class="button-demo" on:click={() => gotoDemoPage}>Meet with us</button>
-            <button class="button-try" on:click={() => gotoTrialPage}>Try Uneforce free</button>
+            <button class="button-demo" on:click={() => goToDemoPage()}>Meet with us</button>
+            <button class="button-try" on:click={() => goToTrialPage()}>Try Uneforce free</button>
         </div>
     </div>
     <div class="column-hero-right">

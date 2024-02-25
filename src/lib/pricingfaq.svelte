@@ -79,6 +79,10 @@
     transform: rotate(180deg);
 }
 
+.hidden {
+    display: none;
+}
+
 
 @media (max-width: 1575px) {
     .pricing-faq-question-text {
@@ -202,7 +206,235 @@
 </style>
 
 <script>
+    import { onMount } from "svelte";
 
+    onMount(() => {
+        const questionText1 = document.querySelector("#q1");
+        const questionIcon1 = document.querySelector("#Q1");
+        const questionText2 = document.querySelector("#q2");
+        const questionIcon2 = document.querySelector("#Q2");
+        const questionText3 = document.querySelector("#q3");
+        const questionIcon3 = document.querySelector("#Q3");
+        const questionText4 = document.querySelector("#q4");
+        const questionIcon4 = document.querySelector("#Q4");
+        const questionText5 = document.querySelector("#q5");
+        const questionIcon5 = document.querySelector("#Q5");
+        const questionText6 = document.querySelector("#q6");
+        const questionIcon6 = document.querySelector("#Q6");
+        const questionText7 = document.querySelector("#q7");
+        const questionIcon7 = document.querySelector("#Q7");
+        const questionText8 = document.querySelector("#q8");
+        const questionIcon8 = document.querySelector("#Q8");
+        const answerText1 = document.querySelector("#a1");
+        const answerIcon1 = document.querySelector("#A1");
+        const answerText2 = document.querySelector("#a2");
+        const answerIcon2 = document.querySelector("#A2");
+        const answerText3 = document.querySelector("#a3");
+        const answerIcon3 = document.querySelector("#A3");
+        const answerText4 = document.querySelector("#a4");
+        const answerIcon4 = document.querySelector("#A4");
+        const answerText5 = document.querySelector("#a5");
+        const answerIcon5 = document.querySelector("#A5");
+        const answerText6 = document.querySelector("#a6");
+        const answerIcon6 = document.querySelector("#A6");
+        const answerText7 = document.querySelector("#a7");
+        const answerIcon7 = document.querySelector("#A7");
+        const answerText8 = document.querySelector("#a8");
+        const answerIcon8 = document.querySelector("#A8");
+
+        questionText1.addEventListener("click", function() {
+            if (answerText1.classList.contains("hidden")){
+                questionIcon1.classList.add("rotate180");
+                answerText1.classList.remove("hidden");
+                answerIcon1.classList.remove("hidden");
+            } else {
+                questionIcon1.classList.remove("rotate180");
+                answerText1.classList.add("hidden");
+                answerIcon1.classList.add("hidden");
+            }
+        });
+        
+
+        questionIcon1.addEventListener("click", function() {
+            if (answerText1.classList.contains("hidden")){
+                questionIcon1.classList.add("rotate180");
+                answerText1.classList.remove("hidden");
+                answerIcon1.classList.remove("hidden");
+            } else {
+                questionIcon1.classList.remove("rotate180");
+                answerText1.classList.add("hidden");
+                answerIcon1.classList.add("hidden");
+            }
+        });
+
+        questionText2.addEventListener("click", function() {
+            if (answerText2.classList.contains("hidden")){
+                questionIcon2.classList.add("rotate180");
+                answerText2.classList.remove("hidden");
+                answerIcon2.classList.remove("hidden");
+            } else {
+                questionIcon2.classList.remove("rotate180");
+                answerText2.classList.add("hidden");
+                answerIcon2.classList.add("hidden");
+            }
+        });
+
+        questionIcon2.addEventListener("click", function() {
+            if (answerText2.classList.contains("hidden")){
+                questionIcon2.classList.add("rotate180");
+                answerText2.classList.remove("hidden");
+                answerIcon2.classList.remove("hidden");
+            } else {
+                questionIcon2.classList.remove("rotate180");
+                answerText2.classList.add("hidden");
+                answerIcon2.classList.add("hidden");
+            }
+        });
+
+        questionText3.addEventListener("click", function() {
+            if (answerText3.classList.contains("hidden")){
+                questionIcon3.classList.add("rotate180");
+                answerText3.classList.remove("hidden");
+                answerIcon3.classList.remove("hidden");
+            } else {
+                questionIcon3.classList.remove("rotate180");
+                answerText3.classList.add("hidden");
+                answerIcon3.classList.add("hidden");
+            }
+        });
+
+        questionIcon3.addEventListener("click", function() {
+            if (answerText3.classList.contains("hidden")){
+                questionIcon3.classList.add("rotate180");
+                answerText3.classList.remove("hidden");
+                answerIcon3.classList.remove("hidden");
+            } else {
+                questionIcon3.classList.remove("rotate180");
+                answerText3.classList.add("hidden");
+                answerIcon3.classList.add("hidden");
+            }
+        });
+
+        questionText4.addEventListener("click", function() {
+            if (answerText4.classList.contains("hidden")){
+                questionIcon4.classList.add("rotate180");
+                answerText4.classList.remove("hidden");
+                answerIcon4.classList.remove("hidden");
+            } else {
+                questionIcon4.classList.remove("rotate180");
+                answerText4.classList.add("hidden");
+                answerIcon4.classList.add("hidden");
+            }
+        });
+
+        questionIcon4.addEventListener("click", function() {
+            if (answerText4.classList.contains("hidden")){
+                questionIcon4.classList.add("rotate180");
+                answerText4.classList.remove("hidden");
+                answerIcon4.classList.remove("hidden");
+            } else {
+                questionIcon4.classList.remove("rotate180");
+                answerText4.classList.add("hidden");
+                answerIcon4.classList.add("hidden");
+            }
+        });
+
+        questionText5.addEventListener("click", function() {
+            if (answerText5.classList.contains("hidden")){
+                questionIcon5.classList.add("rotate180");
+                answerText5.classList.remove("hidden");
+                answerIcon5.classList.remove("hidden");
+            } else {
+                questionIcon5.classList.remove("rotate180");
+                answerText5.classList.add("hidden");
+                answerIcon5.classList.add("hidden");
+            }
+        });
+
+        questionIcon5.addEventListener("click", function() {
+            if (answerText5.classList.contains("hidden")){
+                questionIcon5.classList.add("rotate180");
+                answerText5.classList.remove("hidden");
+                answerIcon5.classList.remove("hidden");
+            } else {
+                questionIcon5.classList.remove("rotate180");
+                answerText5.classList.add("hidden");
+                answerIcon5.classList.add("hidden");
+            }
+        });
+
+        questionText6.addEventListener("click", function() {
+            if (answerText6.classList.contains("hidden")){
+                questionIcon6.classList.add("rotate180");
+                answerText6.classList.remove("hidden");
+                answerIcon6.classList.remove("hidden");
+            } else {
+                questionIcon6.classList.remove("rotate180");
+                answerText6.classList.add("hidden");
+                answerIcon6.classList.add("hidden");
+            }
+        });
+
+        questionIcon6.addEventListener("click", function() {
+            if (answerText6.classList.contains("hidden")){
+                questionIcon6.classList.add("rotate180");
+                answerText6.classList.remove("hidden");
+                answerIcon6.classList.remove("hidden");
+            } else {
+                questionIcon6.classList.remove("rotate180");
+                answerText6.classList.add("hidden");
+                answerIcon6.classList.add("hidden");
+            }
+        });
+
+        questionText7.addEventListener("click", function() {
+            if (answerText7.classList.contains("hidden")){
+                questionIcon7.classList.add("rotate180");
+                answerText7.classList.remove("hidden");
+                answerIcon7.classList.remove("hidden");
+            } else {
+                questionIcon7.classList.remove("rotate180");
+                answerText7.classList.add("hidden");
+                answerIcon7.classList.add("hidden");
+            }
+        });
+
+        questionIcon7.addEventListener("click", function() {
+            if (answerText7.classList.contains("hidden")){
+                questionIcon7.classList.add("rotate180");
+                answerText7.classList.remove("hidden");
+                answerIcon7.classList.remove("hidden");
+            } else {
+                questionIcon7.classList.remove("rotate180");
+                answerText7.classList.add("hidden");
+                answerIcon7.classList.add("hidden");
+            }
+        });
+
+        questionText8.addEventListener("click", function() {
+            if (answerText8.classList.contains("hidden")){
+                questionIcon8.classList.add("rotate180");
+                answerText8.classList.remove("hidden");
+                answerIcon8.classList.remove("hidden");
+            } else {
+                questionIcon8.classList.remove("rotate180");
+                answerText8.classList.add("hidden");
+                answerIcon8.classList.add("hidden");
+            }
+        });
+
+        questionIcon8.addEventListener("click", function() {
+            if (answerText8.classList.contains("hidden")){
+                questionIcon8.classList.add("rotate180");
+                answerText8.classList.remove("hidden");
+                answerIcon8.classList.remove("hidden");
+            } else {
+                questionIcon8.classList.remove("rotate180");
+                answerText8.classList.add("hidden");
+                answerIcon8.classList.add("hidden");
+            }
+        });
+    });
 </script>
 
 

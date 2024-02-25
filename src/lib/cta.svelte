@@ -239,6 +239,6 @@ button {
         </div>
     </div>
     <div class="cta-header-container">
-        <button class="button-try" on:click={() => gotoTrial}>Try Uneforce free</button>
+        <button class="button-try" on:click={() => goToTrial()}>Try Uneforce free</button>
     </div>
 </div>
