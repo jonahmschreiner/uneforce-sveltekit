@@ -351,14 +351,33 @@ button {
 
 <script>
     import { goto } from '$app/navigation';
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
+    import { navbarDropdownVisible } from '$lib/stores/mainstores';
+    import { tick } from 'svelte';
     const baseURL = import.meta.env.VITE_APP_BASE_URL;
+
+    async function showNavbarDropdown () {
+      navbarDropdownVisible.set(true);
+      await tick();
+      document.getElementById("navbardropdown").addEventListener("mouseleave", hidenavbardropdown);
+    }
+
+    function hidenavbardropdown () {
+        navbarDropdownVisible.set(false);
+        document.getElementById("navbardropdown").removeEventListener("mouseleave", hidenavbardropdown);
+    }
+
+    function toggleNavbarColumn () {
+        navbarColumnVisible.set(!$navbarColumnVisible);
+    }
+
 </script>
 
 <nav class="navbar">
   <div class="navbar-container">
     <div class="navbar-column-left">
       <button on:click={() => goto("/")} class="logo">UNEFORCE</button>
-      <h4 class="link-product">Product</h4>
+      <h4 class="link-product" on:mouseover={showNavbarDropdown} on:focus={showNavbarDropdown}>Product</h4>
       <button on:click={() => goto("/pricing")} class="link">Pricing</button>
       <button on:click={() => goto("/comparisons")} class="link">Comparisons</button>
       <button on:click={() => goto("/customers")} class="link">Customers</button>
@@ -366,72 +385,76 @@ button {
     </div>
     <div class="navbar-column-right">
         <button on:click={() => goto("/trial")} class="navbar-cta">Try free</button>
-        <img src='{baseURL}menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
+        <button on:click={toggleNavbarColumn}>
+          <img src='{baseURL}menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
+        </button>
     </div>
   </div>
 
-  <div class="dropdown-product-container-parent hidden">
-    <div class="dropdown-product-categories">
-          <div class="dropdown-product-category-container">
-            <img src="{baseURL}lightbulbGraphic.png" alt="Lightbulb icon that symbolizes Know" class="dropdown-product-category-image">
-            <h4 class="dropdown-product-category">Know</h4>
-          </div>
-          <div class="dropdown-product-category-container">
-            <img src="{baseURL}checkmarkGraphic.png" alt="Checkmark icon that symbolizes Do" class="dropdown-product-category-image">
-            <h4 class="dropdown-product-category">Do</h4>
-          </div>
-          <div class="dropdown-product-category-container">
-            <img src="{baseURL}learnGraphic.png" alt="Line-graph-going-up icon that symbolizes Learn" class="dropdown-product-category-image">
-            <h4 class="dropdown-product-category">Learn</h4>
-          </div>
+  {#if $navbarDropdownVisible}
+    <div class="dropdown-product-container-parent" id="navbardropdown">
+      <div class="dropdown-product-categories">
+            <div class="dropdown-product-category-container">
+              <img src="/lightbulbGraphic.png" alt="Lightbulb icon that symbolizes Know" class="dropdown-product-category-image">
+              <h4 class="dropdown-product-category">Know</h4>
+            </div>
+            <div class="dropdown-product-category-container">
+              <img src="/checkmarkGraphic.png" alt="Checkmark icon that symbolizes Do" class="dropdown-product-category-image">
+              <h4 class="dropdown-product-category">Do</h4>
+            </div>
+            <div class="dropdown-product-category-container">
+              <img src="/learnGraphic.png" alt="Line-graph-going-up icon that symbolizes Learn" class="dropdown-product-category-image">
+              <h4 class="dropdown-product-category">Learn</h4>
+            </div>
+      </div>
+      <div class="dropdown-product">
+    
+        <button on:click={() => goto("/product/clarify")} class="dropdown-product-links-container-know">
+            <div class="dropdown-product-link">
+              <div class="dropdown-product-link-text">
+                <h3 class="dropdown-product-link-header">Clarify</h3>
+                <p class="dropdown-product-link-description">Have the info you need where you need it.</p>
+              </div>
+            </div>
+        </button>
+
+        <button on:click={() => goto("/product/automation")} class="dropdown-product-links-container-do">
+            <div class="dropdown-product-link">
+              <div class="dropdown-product-link-text">
+                <h3 class="dropdown-product-link-header">Automation</h3>
+                <p class="dropdown-product-link-description">Create automation for any use case you can imagine.</p>
+              </div>
+            </div>
+        </button>
+
+        <button on:click={() => goto("/product/insights")} class="dropdown-product-links-container-learn">
+            <div class="dropdown-product-link">
+              <div class="dropdown-product-link-text">
+                <h3 class="dropdown-product-link-header">Insights</h3>
+                <p class="dropdown-product-link-description">Make data-driven business decisions with custom real-time reporting.</p>
+              </div>
+            </div>
+        </button>
+
+        <button on:click={() => goto("/product/secure")} class="dropdown-product-links-container-know">
+            <div class="dropdown-product-link">
+              <div class="dropdown-product-link-text">
+                <h3 class="dropdown-product-link-header">Secure</h3>
+                <p class="dropdown-product-link-description">Use the same cutting-edge security as Fortune 500 companies.</p>
+              </div>
+            </div>
+        </button>
+
+        <button on:click={() => goto("/product/cloud")} class="dropdown-product-links-container-do">
+            <div class="dropdown-product-link">
+              <div class="dropdown-product-link-text">
+                <h3 class="dropdown-product-link-header">Cloud</h3>
+                <p class="dropdown-product-link-description">Access from anywhere.</p>
+              </div>
+            </div>
+        </button>
+
+      </div>
     </div>
-    <div class="dropdown-product">
-  
-      <button on:click={() => goto("/product/clarify")} class="dropdown-product-links-container-know">
-          <div class="dropdown-product-link">
-            <div class="dropdown-product-link-text">
-              <h3 class="dropdown-product-link-header">Clarify</h3>
-              <p class="dropdown-product-link-description">Have the info you need where you need it.</p>
-            </div>
-          </div>
-      </button>
-
-      <button on:click={() => goto("/product/automation")} class="dropdown-product-links-container-know">
-          <div class="dropdown-product-link">
-            <div class="dropdown-product-link-text">
-              <h3 class="dropdown-product-link-header">Automation</h3>
-              <p class="dropdown-product-link-description">Create automation for any use case you can imagine.</p>
-            </div>
-          </div>
-      </button>
-
-      <button on:click={() => goto("/product/insights")} class="dropdown-product-links-container-know">
-          <div class="dropdown-product-link">
-            <div class="dropdown-product-link-text">
-              <h3 class="dropdown-product-link-header">Insights</h3>
-              <p class="dropdown-product-link-description">Make data-driven business decisions with custom real-time reporting.</p>
-            </div>
-          </div>
-      </button>
-
-      <button on:click={() => goto("/product/secure")} class="dropdown-product-links-container-know">
-          <div class="dropdown-product-link">
-            <div class="dropdown-product-link-text">
-              <h3 class="dropdown-product-link-header">Secure</h3>
-              <p class="dropdown-product-link-description">Use the same cutting-edge security as Fortune 500 companies.</p>
-            </div>
-          </div>
-      </button>
-
-      <button on:click={() => goto("/product/cloud")} class="dropdown-product-links-container-know">
-          <div class="dropdown-product-link">
-            <div class="dropdown-product-link-text">
-              <h3 class="dropdown-product-link-header">Cloud</h3>
-              <p class="dropdown-product-link-description">Access from anywhere.</p>
-            </div>
-          </div>
-      </button>
-
-    </div>
-  </div>
+  {/if}
 </nav>

@@ -10,12 +10,18 @@
     import Cta from "../lib/cta.svelte";
     import Navbar from "../lib/navbar.svelte";
     import Navbarcolumn from "../lib/navbarcolumn.svelte";
+    import { navbarColumnVisible } from '$lib/stores/mainstores';
+    import { navbarDropdownVisible } from '$lib/stores/mainstores';
+    navbarColumnVisible.set(false);
+    navbarDropdownVisible.set(false);
 </script>
 
 <title>Enterprise-Grade Tech Transfer Management for Universities</title>
 <meta name="description" content="Uneforce brings enterprise efficiency to tech transfer offices by customizing the top CRM platforms for TTO use cases.">
 <Navbar />
-<!-- <Navbarcolumn /> -->
+{#if $navbarColumnVisible}
+    <Navbarcolumn />
+{/if}
 <Hero />
 <Mission />
 <Quote />
