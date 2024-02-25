@@ -357,7 +357,6 @@ button {
     import { navbarColumnVisible } from '$lib/stores/mainstores';
     import { navbarDropdownVisible } from '$lib/stores/mainstores';
     import { tick } from 'svelte';
-    const baseURL = import.meta.env.VITE_APP_BASE_URL;
 
     async function showNavbarDropdown () {
       navbarDropdownVisible.set(true);
@@ -394,7 +393,7 @@ button {
     <div class="navbar-column-right">
         <button on:click={() => {hidenavbardropdown(); goto("/trial");}} class="navbar-cta">Try free</button>
         <button on:click={toggleNavbarColumn}>
-          <img src='{baseURL}menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
+          <img src='/menuButton.png' alt="Three black bars stacked vertically to represent the menu button." class="menu-button" id="menu-button">
         </button>
     </div>
   </div>

@@ -9,8 +9,7 @@
     import Navbar from "../../../lib/navbar.svelte";
     import Navbarcolumn from "../../../lib/navbarcolumn.svelte";
     import { navbarColumnVisible } from '$lib/stores/mainstores';
-    const baseURL = import.meta.env.VITE_APP_BASE_URL;
-    let screenshot = `${baseURL}cloudLoginScreenshot.png`;
+    let screenshot = `/cloudLoginScreenshot.png`;
     let page_title = "Work securely from anywhere";
     let page_description = "Cloud-based technology enables flexible work locations and device usage, allowing for greater productivity without compromising compliance.";
     let cta_title = "Want to try it out?";
