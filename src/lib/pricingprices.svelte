@@ -285,7 +285,7 @@ button {
         </div>
         <p class="pricing-best-for">Best for offices who don’t need custom solutions or want to build their own</p>
         <div class="pricing-description-1">
-            <p class="pricing-description-text">$15k Installation Cost</p>
+            <p class="pricing-description-text">$20k Installation Cost</p>
             <p class="pricing-description-salesforce-license">+ salesforce license yearly cost</p>
         </div>
         <div class="pricing-description-2">
