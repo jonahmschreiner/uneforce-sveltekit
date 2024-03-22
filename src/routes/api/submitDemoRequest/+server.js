@@ -2,6 +2,7 @@ export async function POST({ request }) {
     let data = await request.json();
     let { firstname, lastname, email, phone, organization, title } = data;
     //do salesforce callout here
+    sendEmail();
  <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript">
         function sendEmail() {
