@@ -38,6 +38,7 @@ const LOGIN_URL = 'https://login.salesforce.com/services/oauth2/token';
         FirstName: firstname,
         LastName: lastname,
         Company: organization,
+        LeadSource: 'Web Lead-Trial-Registration', 
         // Add more fields as needed
       };
 
