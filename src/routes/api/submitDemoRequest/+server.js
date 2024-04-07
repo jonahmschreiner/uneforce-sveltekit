@@ -38,14 +38,14 @@ const LOGIN_URL = 'https://login.salesforce.com/services/oauth2/token';
         FirstName: firstname,
         LastName: lastname,
         Company: organization,
-        LeadSource: ''Web Lead-Demo-Request', 
+        LeadSource: 'Web Lead-Demo-Request', 
         // Add more fields as needed
       };
 
-      const createLeadResponse = await fetch(`${API_BASE_URL}/sobjects/Lead`, {
+      const createLeadResponse = await fetch('${API_BASE_URL}/sobjects/Lead', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${access_token}`,
+          Authorization: 'Bearer ${access_token}',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(leadData),
