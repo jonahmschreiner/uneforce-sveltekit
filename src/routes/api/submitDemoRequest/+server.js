@@ -47,7 +47,6 @@ console.log('params' + params);
         headers: {
           Authorization: 'Bearer ${access_token}',
           'Content-Type': 'application/json',
-            Access-Control-Allow-Origin: *,
         },
         body: JSON.stringify(leadData),
       });
