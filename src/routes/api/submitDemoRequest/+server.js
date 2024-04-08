@@ -18,7 +18,7 @@ const LOGIN_URL = 'https://login.salesforce.com/services/oauth2/token';
       username: username,
       password: password + securityToken,
     });
-
+console.log('params' + params);
     try {
       const loginResponse = await fetch(LOGIN_URL, {
         method: 'POST',
