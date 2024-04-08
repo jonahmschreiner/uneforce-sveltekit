@@ -3,13 +3,13 @@ export async function POST({ request }) {
     let { firstname, lastname, email, phone, organization, title } = data;
     //do salesforce callout here
 const LOGIN_URL = 'https://login.salesforce.com/services/oauth2/token';
-    const API_BASE_URL = 'https://your-salesforce-instance-url/services/data/vXX.X/';
+    const API_BASE_URL = 'https://schreinerconsulting-dev-ed/services/data/vXX.X/';
 
-    const clientId = 'your_client_id';
-    const clientSecret = 'your_client_secret';
-    const username = 'your_salesforce_username';
-    const password = 'your_salesforce_password';
-    const securityToken = 'your_salesforce_security_token';
+    const clientId = '3MVG9uudbyLbNPZN2bFaoCoXDvR93n5px86XTSaRdZNOb6gkxfCN6JVuVhElcgtkpGKW.NgmpWMFAqMmGVHrc
+    const clientSecret = 'C0974536CD956C8D5E61E24CB4D01F07D65D39283DCF710F963D4E283719070C';
+    const username = 'schreinerconsulting@gmail.com';
+    const password = 'BookYearCatY0Y0!';
+    const securityToken = 'AFUrhaVgtb3uUyNnWlDcbKgJ';
 
     const params = new URLSearchParams({
       grant_type: 'password',
