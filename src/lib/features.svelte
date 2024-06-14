@@ -6,6 +6,7 @@
     font-size: 64px;
     text-align: center;
     max-width: 800px;
+    letter-spacing: -0.01em;
 }
 
 .features-container-heading {
@@ -54,7 +55,7 @@
     font-weight: 900;
     font-size: 52px;
     max-width: 500px;
-
+    letter-spacing: -0.01em;
 }
 
 .features-p {

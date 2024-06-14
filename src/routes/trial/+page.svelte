@@ -309,15 +309,15 @@ button {
         <p class="trial-description">Register for a trial and experience the platform first-hand. Here's what to expect:</p>
         <div class="book-demo-left-subcolumn">
             <div class="book-demo-checkbox-line">
-                <img src="checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
+                <img src="/checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
                 <p class="book-demo-p">A guided tour walking you through the main features</p>
             </div>
             <div class="book-demo-checkbox-line">
-                <img src="checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
+                <img src="/checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
                 <p class="book-demo-p">Shareable login credentials and access from any browser</p>
             </div>
             <div class="book-demo-checkbox-line">
-                <img src="checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
+                <img src="/checkboxGraphic.png" alt="Checkbox representing a buying criteria Uneforce fulfills" class="book-demo-checkbox">
                 <p class="book-demo-p">72 hours to test it out</p>
             </div>
         </div>

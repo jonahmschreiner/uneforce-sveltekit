@@ -228,6 +228,7 @@ margin-bottom: 20px;
   font-size: 19px;
   margin: 0px;
   text-align: left;
+  letter-spacing: -0.01em;
 }
 
 .dropdown-product-category-container {

@@ -26,6 +26,7 @@
     font-weight: 900;
     font-size: 64px;
     max-width: 650px;
+    letter-spacing: -0.01em;
 }
 
 .hero-p {
@@ -33,6 +34,7 @@
     font-weight: 500;
     font-size: 27px;
     display: flex;
+    letter-spacing: -0.01em;
 }
 
 .button-row-container {
@@ -53,7 +55,6 @@
     margin-right: 20px;
     margin-bottom: 20px;
     text-decoration: none;
-
 }
 
 .button-demo:hover {

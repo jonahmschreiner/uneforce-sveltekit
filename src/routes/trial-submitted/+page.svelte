@@ -16,6 +16,7 @@
     font-size: 55px;
     margin-bottom: 30px;
     text-align: center;
+    letter-spacing: -0.01em;
 }
 
 .demo-submitted-p {
